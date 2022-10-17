@@ -51,6 +51,7 @@ mongoose.connect(url, connectionOptions)
     process.exit()
   })
 
-app.listen(Number(Env.get('PORT')) ? Number(Env.get('PORT')) : 5000, () => {
+app.listen(Number(Env.get('PORT')) ? Number(Env.get('PORT')) : 8081, () => {
   console.log(`🚀 Server listening at http(s)://localhost:${Env.get('PORT')}`)
 })
+
